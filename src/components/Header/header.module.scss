@@ -1,4 +1,4 @@
-@import '../../variables';
+@import 'variables';
 
 .container {
 	display: flex;
@@ -29,4 +29,9 @@
 			margin-left: 2rem;
 		}
 	}
+}
+
+img {
+	width: 100vw;
+	height: 25rem;
 }
