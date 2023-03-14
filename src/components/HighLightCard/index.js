@@ -1,14 +1,17 @@
 import React from 'react'
-import HighLightCardImg from 'assets/Rectangle1.png'
+import HighLightCardImg from '../../assets/Rectangle1.png'
 import styles from './HighLightCard.module.scss'
+import LocalActivityIcon from '@mui/icons-material/LocalActivity';
 
 const HighLightCard = () => {
 	return (
 		<>
-			<section>
-				<img src={HighLightCardImg} alt='CodeChella Highlight Banner' />
-				<div className={styles.text__box}>
-					<div className={styles.text__box__container}>
+			<section className={styles.HighLightSection}>
+				<div className={styles.Image__Box}>
+					<img src={HighLightCardImg} alt='CodeChella Highlight Banner' />
+				</div>
+				<div className={styles.Text__box}>
+					<div className={styles.Text__box__container}>
 						<h3>
 							&#10094; 11 e 12 de Março &#10095;
 							<br />
@@ -19,7 +22,8 @@ const HighLightCard = () => {
 						</p>
 						<button>
 							<p>Comprar Ingresso!</p>
-							<img src='/assets/startEmblem.png'/>
+							<LocalActivityIcon
+							/>
 						</button>
 					</div>
 				</div>

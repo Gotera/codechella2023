@@ -1,0 +1,10 @@
+@import 'variables';
+
+.FooterTypeOne {
+	height: 20rem;
+
+	background-image: $banner-one;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}

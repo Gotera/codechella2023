@@ -1,0 +1,91 @@
+@import 'variables';
+
+.LineUp__Container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: $white;
+	padding: 4rem 0 4rem 0;
+
+	.Tittle__div {
+		padding: 0rem 0 1rem 0;
+	}
+
+	// .ContrastedDate__Container {
+	// 	position: relative;
+	// 	::before {
+	// 		content: "";
+	// 		display: block;
+	// 		width: 75%;
+	// 		height: 2px;
+	// 		position: absolute;
+	// 		background: black;
+	// 		top: 50%;
+	// 		z-index: -2;
+	// 	}
+
+	// 	span {
+	// 		background: $white;
+	// 	}
+	// }
+
+	h1 {
+		font-family: 'Calistoga';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 64px;
+		line-height: 83px;
+	}
+
+	.Bands__Container {
+		width: 100%;
+		font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 32px;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		h3 {
+			align-items: center;
+			font-weight: 800;
+			font-size: 48px;
+			line-height: 56px;
+			padding: 1rem;
+		}
+
+		.bands__lirst__lineUp {
+			width: 100%;
+			font-size: 40px;
+			line-height: 47px;
+		}
+
+		.bands__second__lineUp {
+			width: 90%;
+			line-height: 38px;
+		}
+
+		.bands__third__lineUp {
+			width: 80%;
+			font-weight: 500;
+			line-height: 38px;
+		}
+
+		ul {
+			padding: 0.6rem 0 0rem 0;
+
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			flex-wrap: wrap;
+
+			li {
+				@media only screen and (max-width: 768px) {
+					padding: 1.6rem 0 0rem 0;
+				}
+			}
+		}
+	}
+}

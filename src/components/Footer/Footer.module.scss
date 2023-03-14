@@ -1,0 +1,45 @@
+@import 'variables';
+
+.Footer__Container {
+	height: 12rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	.SocialMedia__Container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		span {
+			font-family: 'Raleway';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 40px;
+			color: $white;
+		}
+
+		ul {
+			width: 11rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	}
+
+	.Congratulations__Container {
+		font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 40px;
+		color: $white;
+		display: flex;
+		align-items: center;
+
+		a {
+			color: $white;
+		}
+	}
+}

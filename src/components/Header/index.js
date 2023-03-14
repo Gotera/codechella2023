@@ -1,6 +1,5 @@
 import React from 'react'
 import codeChellaLogo from 'assets/Logo1.png'
-import codeChellaBanner from 'assets/Boreal.png'
 import styles from './header.module.scss'
 
 const Header = () => {
@@ -15,7 +14,7 @@ const Header = () => {
 					<li>Ingresso</li>
 				</ul>
 			</div>
-			<img src={codeChellaBanner} alt='CodeChella 2023 Banner'/>
+			<div className={styles.background__wrapper}/>
 		</>
 	)
 }

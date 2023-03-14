@@ -1,0 +1,30 @@
+@import 'variables';
+
+.ContrastedDate__Container {
+	background-color: $dark-green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	// position: relative;
+
+	// ::before {
+	// 	content: "";
+	// 	display: block;
+	// 	width: 120px;
+	// 	height: 2px;
+	// 	position: absolute;
+	// 	background: black;
+	// 	left: 0;
+	// 	top: 50%;
+	// }
+
+	h1 {
+		font-family: 'Calistoga';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 62px;
+		color: $white;
+	}
+}
