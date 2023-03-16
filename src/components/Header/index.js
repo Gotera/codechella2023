@@ -14,7 +14,6 @@ const Header = () => {
 					<li>Ingresso</li>
 				</ul>
 			</div>
-			<div className={styles.background__wrapper}/>
 		</>
 	)
 }

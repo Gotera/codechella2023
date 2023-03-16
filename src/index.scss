@@ -1,3 +1,8 @@
+@import './variables.scss';
+
+body {
+  background: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

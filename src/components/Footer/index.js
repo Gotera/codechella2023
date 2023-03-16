@@ -35,7 +35,10 @@ const Footer = () => {
 						<li>Desenvolvido por Alura.</li>
 						<li>
 							Coded por ‎
-							<a href='https://orlandomedeiros.vercel.app'>
+							<a
+								href='https://orlandomedeiros.vercel.app'
+								target='_blank'
+								rel="noreferrer">
 								Orlando
 							</a>.
 						</li>
