@@ -21,15 +21,15 @@
 			height: 384px;
 
 			@media only screen and (max-width: 360px) {
-				width: 19.5rem;
 				height: 23.5rem;
+				width: 19.5rem;
 			}
 		}
 	}
 
 	.Text__box__container {
-		width: 600px;
-		height: 384px;
+		width: 37.5rem;
+		height: 24rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -37,6 +37,9 @@
 
 		@media only screen and (max-width: 768px) {
 			padding: 4rem 0 0rem 0;
+		}
+		@media only screen and (max-width: 360px) {
+			width: 19.5rem;
 		}
 
 		h3 {
