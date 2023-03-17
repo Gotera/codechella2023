@@ -1,17 +1,14 @@
 @import 'variables';
 
 .background__wrapper__secondOne {
-	width: 90rem;
-	height: 25rem;
+	height: 20rem;
 
 	@media only screen and (max-width: 768px) {
-		width: 48rem;
 		height: 24rem;
 	}
 
 	@media only screen and (max-width: 360px) {
-		width: 22.5rem;
-		height: 17rem;
+		height: 15rem;
 	}
 
 	background-image: url(../../../../../assets/About/abboutbanner.png);

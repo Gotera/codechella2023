@@ -16,10 +16,14 @@
 
  	@media only screen and (max-width: 768px) {
  		text-align: center;
- 		height: 5rem;
  		overflow: auto;
  		flex-direction: column;
+ 	}
 
+ 	@media only screen and (max-width: 360px) {
+ 		height: 5rem;
+ 		align-items: flex-start;
+ 		justify-content: space-around;
  	}
 
  	img {
@@ -87,10 +91,20 @@
 
  	input:checked~nav ul {
  		transform: translateY(0);
+ 	}
+ }
 
-		.Bar:nth-child(1) {
-			position: absolute;
-			transform: rotate(45deg);
-		}
+ input:checked~.Burger {
+ 	:nth-child(1) {
+ 		position: absolute;
+ 		transform: rotate(45deg);
+ 	}
+
+ 	:nth-child(2) {
+ 		display: none;
+ 	}
+
+ 	:nth-child(3) {
+ 		transform: rotate(-45deg);
  	}
  }

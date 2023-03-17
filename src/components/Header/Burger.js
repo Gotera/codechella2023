@@ -5,9 +5,9 @@ const Burger = () => {
 	return (
 		<>
 			<label className={styles.Burger} for="toggle">
-				<div className={styles.Bar}></div>
-				<div className={styles.Bar}></div>
-				<div className={styles.Bar}></div>
+				<span className={styles.Bar}></span>
+				<span className={styles.Bar}></span>
+				<span className={styles.Bar}></span>
 			</label>
 		</>
 	)
