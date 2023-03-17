@@ -20,10 +20,10 @@
 			width: 600px;
 			height: 384px;
 
-			// @media only screen and (max-width: 360px) {
-			// 	width: 19.5rem;
-			// 	height: 23.5rem;
-			// }
+			@media only screen and (max-width: 360px) {
+				width: 19.5rem;
+				height: 23.5rem;
+			}
 		}
 	}
 

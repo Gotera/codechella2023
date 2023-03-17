@@ -8,21 +8,23 @@
  	font-weight: 700;
  	font-size: 20px;
  	line-height: 40px;
-
+ 	z-index: 3;
  	display: flex;
  	align-items: center;
  	justify-content: space-around;
+ 	text-align: center;
 
  	@media only screen and (max-width: 768px) {
- 		height: 12rem;
- 		padding-top: 0.5rem;
+ 		text-align: center;
+ 		height: 5rem;
  		overflow: auto;
  		flex-direction: column;
+
  	}
 
  	img {
  		height: 64px;
- 		width: 14.5rem;
+ 		// width: 14.5rem;
  	}
 
  	ul {
@@ -36,11 +38,59 @@
  		justify-content: center;
 
  		@media only screen and (max-width: 360px) {
- 			display: none;
+ 			flex-direction: column;
+ 			text-align: center;
+ 			position: absolute;
+ 			background-color: $purple;
+ 			width: 100%;
+ 			top: 5rem;
+ 			left: 0;
+ 			transform: translateY(-100%);
+ 			transition: .6s;
  		}
 
  		li {
+ 			height: 100%;
  			margin-left: 2rem;
+ 			cursor: pointer;
+ 			transition: .4s;
  		}
+ 	}
+
+ 	.Burger {
+ 		display: none;
+ 		width: 2rem;
+ 		height: min-content;
+ 		cursor: pointer;
+ 		position: absolute;
+ 		right: 1rem;
+ 		z-index: 1;
+ 		visibility: visible;
+
+ 		@media only screen and (max-width: 360px) {
+ 			display: grid !important;
+ 		}
+
+ 		.Bar {
+ 			width: 40px;
+ 			height: 5px;
+ 			margin-bottom: 10px;
+ 			background-color: $white;
+ 			border-radius: 10px;
+ 			transition: .4s;
+ 		}
+ 	}
+
+ 	input {
+ 		display: none;
+ 	}
+
+ 	input:checked~nav ul {
+ 		transform: translateY(0);
+
+		.Bar:nth-child(1) {
+			position: absolute;
+			transform: rotate(45deg);
+		}
  	}
  }

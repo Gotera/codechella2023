@@ -2,9 +2,15 @@
 
 .Footer__Container {
 	height: 12rem;
+
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+
+	@media only screen and (max-width: 360px) {
+		height: 20rem;
+		flex-direction: column;
+	}
 
 	.SocialMedia__Container {
 		display: flex;
@@ -37,6 +43,12 @@
 		color: $white;
 		display: flex;
 		align-items: center;
+
+		@media only screen and (max-width: 360px) {
+			ul{
+				text-align: center;
+			}
+		}
 
 		a {
 			color: $white;
