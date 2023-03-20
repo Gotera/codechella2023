@@ -66,4 +66,20 @@
 			}
 		}
 	}
+
+	.Mobile__Adjustment {
+		@media only screen and (min-width: 1140px) {
+			img {
+				order: 1;
+				padding-left: 7%;
+			}
+
+			.Text__Container {
+				width: 33.5rem;
+				padding-left: 7%;
+				align-items: end;
+				text-align: end;
+			}
+		}
+	}
 }

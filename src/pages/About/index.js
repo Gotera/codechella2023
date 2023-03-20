@@ -19,7 +19,7 @@ const About = () => {
 						</p>
 					</div>
 				</div>
-				<div className={styles.Image__Text__Container}>
+				<div className={`${styles.Image__Text__Container} ${styles.Mobile__Adjustment}`}>
 					<img src={sustentability} alt='Sustentabilidade Banner' />
 					<div className={styles.Text__Container}>
 						<h1>Sustentabilidade</h1>
