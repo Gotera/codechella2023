@@ -17,22 +17,38 @@ const Footer = () => {
 					</span>
 					<ul>
 						<li>
-							<img src={instagramSM} alt='Instagram Icon' />
+							<a href='#'>
+								<img src={instagramSM} alt='Instagram Icon' />
+							</a>
 						</li>
 						<li>
-							<img src={twitchSM} alt='Twitch Icon Icon' />
+							<a href='#'>
+								<img src={twitchSM} alt='Twitch Icon Icon' />
+							</a>
 						</li>
 						<li>
-							<img src={twitterSM} alt='Twitter Icon' />
+							<a href='#'>
+								<img src={twitterSM} alt='Twitter Icon' />
+							</a>
 						</li>
 						<li>
-							<img src={whatsSM} alt='Whatsapp Icon' />
+							<a href='#'>
+								<img src={whatsSM} alt='Whatsapp Icon' />
+							</a>
 						</li>
 					</ul>
 				</div>
 				<div className={styles.Congratulations__Container}>
 					<ul>
-						<li>Desenvolvido por Alura.</li>
+						<li>Desenvolvido por ‎
+							<a
+								href='https://www.alura.com.br'
+								target='_blank'
+								rel="noreferrer"
+							>
+								Alura
+							</a>.
+						</li>
 						<li>
 							Coded por ‎
 							<a

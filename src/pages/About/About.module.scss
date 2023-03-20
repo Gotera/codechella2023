@@ -2,6 +2,7 @@
 
 .About__Container {
 	padding: 4rem 0rem 0rem 0rem;
+
 	.Image__Text__Container {
 		padding: 4rem 0rem 0rem 0rem;
 		display: flex;
@@ -24,7 +25,6 @@
 			}
 		}
 
-
 		.Text__Container {
 			width: 33.5rem;
 			padding-left: 7%;
@@ -40,7 +40,7 @@
 				text-align: center;
 				padding-left: 0%;
 			}
-			
+
 			@media only screen and (max-width: 360px) {
 				width: 19.5rem;
 				align-items: center;
@@ -66,5 +66,4 @@
 			}
 		}
 	}
-
 }

@@ -7,28 +7,30 @@ const Header = () => {
 	return (
 		<>
 			<div className={styles.container}>
-				<img src={codeChellaLogo} alt='codechella' />
+				<a href='/'>
+					<img src={codeChellaLogo} alt='codechella' />
+				</a>
 				<input type='checkbox' id='toggle' />
 				<Burger />
 				<nav id='itens'>
 					<ul>
 						<li>
-							<a href='#'>
+							<a href='/about'>
 								A experiência
 							</a>
 						</li>
 						<li>
-							<a href='#'>
+							<a href='/map'>
 								Mapa de Setores
 							</a>
 						</li>
 						<li>
-							<a href='#'>
+							<a href='/info'>
 								Informações
 							</a>
 						</li>
 						<li>
-							<a href='#'>
+							<a href='/passe'>
 								Ingresso
 							</a>
 						</li>
