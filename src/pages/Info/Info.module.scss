@@ -1,0 +1,57 @@
+@import 'variables';
+
+.Info__Container {
+	width: 62rem;
+
+	.FAQ__Container {
+		section {
+			.FAQ__Question {
+				padding: 15px;
+				background-color: $white-purple;
+				color: $white;
+
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				h2 {
+					font-family: 'Raleway';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 32px;
+					line-height: 38px;
+
+				}
+
+				img {
+					width: 14px;
+					height: 7px;
+				}
+			}
+
+			.FAQ__Answer {
+				padding-inline: 15px;
+				max-height: 0;
+				overflow: hidden;
+				color: $shadow-grey;
+				background-color: $white-blue;
+
+				p {
+					font-family: 'Raleway';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 40px;
+
+					a {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+.Info__Container .FAQ__Container section.active {
+	max-height: 7rem;
+}

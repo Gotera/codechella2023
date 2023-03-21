@@ -5,7 +5,7 @@ import styles from './LineUp.module.scss'
 const LineUp = () => {
 	return (
 		<>
-			<div className={styles.LineUp__Container}>
+			<div className={styles.LineUp__Container} name='teste__teste'>
 				<div className={styles.Tittle__div}>
 					<h1>&#x2f;Line-Up&#x2f;</h1>
 				</div>
