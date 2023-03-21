@@ -3,7 +3,6 @@
     "baseUrl": "src",
     "paths": {
       "components": ["components"]
-
     }
   },
   "exclude": ["node_modules"],

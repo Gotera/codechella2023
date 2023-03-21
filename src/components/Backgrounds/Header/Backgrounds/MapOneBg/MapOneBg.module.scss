@@ -1,6 +1,6 @@
 @import 'variables';
 
-.background__wrapper__MapOneBg {
+.MapOneBg {
 	height: 20rem;
 
 	@media only screen and (max-width: 768px) {
@@ -10,7 +10,8 @@
 	@media only screen and (max-width: 360px) {
 		height: 15rem;
 	}
-	background-image: url(../../../../assets/Boreal.png);
+
+	background-image: url(../../../../../assets/Map/banner12FHD.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

@@ -1,0 +1,176 @@
+@import 'variables';
+
+.Map__Container {
+	.Map__Legend__Wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		@media only screen and (max-width: 768px) {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		@media only screen and (max-width: 360px) {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		img {
+			width: 43rem;
+			height: 38rem;
+
+			@media only screen and (max-width: 768px) {
+				width: 40.5rem;
+				height: 38rem;
+			}
+
+			@media only screen and (max-width: 360px) {
+				width: 22.5rem;
+				height: 22.5rem;
+			}
+		}
+
+		ul {
+			width: 18rem;
+			color: $white;
+
+			li {
+				font-family: 'Raleway';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 40px;
+				margin-bottom: 5%;
+
+				display: flex;
+				align-items: center;
+			}
+
+			:first-child {
+				font-family: 'Raleway';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 32px;
+				line-height: 38px;
+			}
+		}
+
+		.box1 {
+			width: 2rem;
+			height: 2rem;
+			background-color: $blue;
+			margin-right: 15%;
+			border-radius: 5cm;
+		}
+
+		.box2 {
+			width: 2rem;
+			height: 2rem;
+			background-color: $pink;
+			margin-right: 15%;
+			border-radius: 5cm;
+		}
+
+		.box3 {
+			width: 2rem;
+			height: 2rem;
+			background-color: $white-green;
+			margin-right: 15%;
+			border-radius: 5cm;
+		}
+
+		.box4 {
+			width: 2rem;
+			height: 2rem;
+			background-color: $white-purple;
+			margin-right: 15%;
+			border-radius: 5cm;
+		}
+
+		.box5 {
+			width: 2rem;
+			height: 2rem;
+			background-color: $dark-blue;
+			margin-right: 15%;
+			border-radius: 5cm;
+		}
+	}
+}
+
+.Map__Info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		margin-top: 10%;
+	}
+
+	.Map__Info__Container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		color: $white;
+
+		img {
+			width: 23.5rem;
+			height: 14.5;
+
+			@media only screen and (max-width: 360px) {
+				width: 19.5rem;
+				height: 14.5;
+			}
+		}
+
+		h3 {
+			font-family: 'Raleway';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 38px;
+			margin-top: 5%;
+		}
+
+		p {
+			width: 23.5rem;
+			height: 14.5rem;
+			font-family: 'Raleway';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 40px;
+			margin-top: 2%;
+			text-align: center;
+
+			@media only screen and (max-width: 768px) {
+				width: 43.5rem;
+
+			}
+
+			@media only screen and (max-width: 360px) {
+				width: 20rem;
+				height: 18rem;
+			}
+		}
+	}
+
+
+	.Mobile__Adjustment {
+		@media only screen and (min-width: 1140px) {
+			padding-top: 18%;
+		}
+
+		@media only screen and (max-width: 768px) {
+			padding-top: 0%;
+		}
+
+		@media only screen and (max-width: 360px) {
+			padding-top: 0%;
+		}
+	}
+}
