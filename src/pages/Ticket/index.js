@@ -26,12 +26,12 @@ const Ticket = () => {
 						</div>
 					</div>
 				</form>
-					<button>
-						<p>
-							Avançar!
-						</p>
-						<img src={localActivity} alt='Right Arrow' />
-					</button>
+				<button>
+					<p>
+						Avançar!
+					</p>
+					<img src={localActivity} alt='Right Arrow' />
+				</button>
 			</div>
 		</>
 	)
