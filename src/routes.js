@@ -1,3 +1,4 @@
+import UserProvider from 'common/context/User';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import About from 'pages/About';
@@ -13,13 +14,15 @@ export default function AppRouter() {
 		<main className='container'>
 			<Router>
 				<Header />
-				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/about' element={<About />} />
-					<Route path='/map' element={<Map />} />
-					<Route path='/info' element={<Info />} />
-					<Route path='/passe' element={<Ticket />} />
-				</Routes>
+				<UserProvider>
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/about' element={<About />} />
+						<Route path='/map' element={<Map />} />
+						<Route path='/info' element={<Info />} />
+						<Route path='/passe' element={<Ticket />} />
+					</Routes>
+				</UserProvider>
 				<Footer />
 			</Router>
 		</main>

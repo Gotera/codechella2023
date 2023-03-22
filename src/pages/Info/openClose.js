@@ -1,6 +1,6 @@
-const faqs = document.querySelectorAll(".FAQ__Question");
+// const faqs = document.querySelectorAll(".FAQ__Question");
 
-faqs.forEach((item) => {
+// faqs.forEach((item) => {
 	
-});
+// });
 
