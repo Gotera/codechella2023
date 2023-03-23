@@ -22,7 +22,6 @@ const Info = () => {
 					</section>
 				</div>
 			</div>
-			<script src='./openClose.js' ></script>
 		</>
 	)
 }
