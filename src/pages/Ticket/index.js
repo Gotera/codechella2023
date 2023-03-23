@@ -2,9 +2,11 @@ import styles from './Ticket.module.scss'
 import localActivity from 'assets/Info/local_activity.png';
 import { useContext } from 'react';
 import { UserContext } from 'common/context/User';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const Ticket = () => {
+	const navigate = useNavigate();
 	const {
 		name,
 		setName,
@@ -48,8 +50,8 @@ const Ticket = () => {
 					</div>
 				</form>
 				<button
-					disabled={name.lenght < 2}
-					onClick={() => Navigate}
+					disabled={name < 2}
+					onClick={(event) => navigate('/')}
 				>
 					<p>
 						Avançar!
