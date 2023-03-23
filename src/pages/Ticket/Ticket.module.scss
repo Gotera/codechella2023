@@ -29,13 +29,6 @@
 		text-align: center;
 		align-items: center;
 
-		:disabled,
-		[disabled] {
-			border: 1px solid red;
-			background-color: #cccccc;
-			color: #666666;
-		}
-
 		p {
 			color: $white;
 			font-family: 'Raleway';
@@ -52,6 +45,7 @@
 		height: 3rem;
 		margin-bottom: 3%;
 		color: #000000;
+		border: none;
 
 		font-family: 'Raleway';
 		font-style: normal;
@@ -60,6 +54,14 @@
 		line-height: 38px;
 		padding-left: 5px;
 		border-radius: 4px;
+	}
+
+	textarea.input {
+		resize: vertical;
+	}
+
+	input:focus {
+		outline: 3px solid transparent;
 	}
 
 	form {
@@ -107,6 +109,7 @@
 				order: 1;
 				width: 22rem;
 				height: 3rem;
+				border: none;
 
 				@media only screen and (max-width: 768px) {
 					width: 20rem;

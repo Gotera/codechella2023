@@ -23,6 +23,7 @@ const Ticket = () => {
 					<input
 						type='text'
 						id='name'
+						required
 						placeholder='Ex: Code Chella 2023'
 						onChange={(event) => setName(event.target.value)}
 					/>
@@ -30,6 +31,7 @@ const Ticket = () => {
 					<input
 						type='email'
 						id='email'
+						required
 						placeholder='Ex: leandroViado@gmail.com'
 						onChange={(event) => setEmail(event.target.value)}
 					/>
@@ -37,7 +39,11 @@ const Ticket = () => {
 					<div className={styles.Special__Container}>
 						<div className={styles.Special__Container1}>
 							<legend>Tipo de Ingresso:</legend>
-							<select id='passe' name='passe'>
+							<select
+								id='passe'
+								name='passe'
+								required
+							>
 								<option>Selecione</option>
 								<option value='IC'>Ingresso Comum</option>
 								<option value='IP'>Ingresso Premium</option>
@@ -45,22 +51,22 @@ const Ticket = () => {
 						</div>
 						<div className={styles.Special__Container2}>
 							<legend>Data de Nascimento:</legend>
-							<input type='date' />
+							<input
+								type='date'
+								required
+							/>
 						</div>
 					</div>
 				</form>
 				<button
 					disabled={name < 2}
-					onClick={(event) => navigate('/')}
+					onClick={() => navigate('/ingresso')}
 				>
 					<p>
 						Avançar!
 					</p>
 					<img src={localActivity} alt='Right Arrow' />
 				</button>
-				{name}
-				<br></br>
-				{email}
 			</div>
 		</>
 	)

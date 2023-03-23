@@ -1,10 +1,70 @@
 @import 'variables';
 
+.Tittle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h1 {
+		width: 19.5rem;
+		font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 38px;
+		text-align: center;
+		color: $white;
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+	}
+}
+
 .Passe__Container {
 	width: 19.5rem;
 	height: 35.25rem;
 	color: $white;
-	background: linear-gradient (180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
+	background: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
 
+	.Header__Card__Container {
+		padding: 2rem;
+
+		display: flex;
+		justify-content: space-around;
+
+		img:first-child {
+			width: 7.25rem;
+			height: 2rem;
+		}
+
+		img:nth-child(2) {
+			width: 2rem;
+			height: 2rem;
+			color: $white;
+		}
+	}
+
+	.Content__Container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h3 {
+			font-family: 'Raleway';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 38px;
+			padding-top: 2rem;
+			padding-bottom: 1rem;
+		}
+
+		p {
+			font-family: 'Raleway';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 40px;
+		}
+	}
 }
