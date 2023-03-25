@@ -8,6 +8,8 @@ import { UserContext } from 'common/context/User';
 const Passe = () => {
 	const {
 		name,
+		passe,
+		date
 	} = useContext(UserContext);
 	return (
 		<div className={styles.Tittle}>
@@ -22,8 +24,8 @@ const Passe = () => {
 					<img src={qrCode} alt='QRCODE emulator' id='img2' />
 					<h3>{name}</h3>
 					<p>Ingresso Costesia</p>
-					<p>Setor Pista</p>
-					<p>Data: 11/03</p>
+					<p>Setor {passe}</p>
+					<p>Data: {date}</p>
 					<p>Local: São Paulo-SP</p>
 				</div>
 			</div>

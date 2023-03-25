@@ -6,12 +6,14 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Ticket = () => {
+	
 	const navigate = useNavigate();
-	const {
+	const { 
 		name,
 		setName,
-		email,
-		setEmail
+		setEmail,
+		setData,
+		setPasse
 	} = useContext(UserContext);
 	return (
 		<>
@@ -43,17 +45,20 @@ const Ticket = () => {
 								id='passe'
 								name='passe'
 								required
+								onChange={(event) => setPasse(event.target.value)}
 							>
-								<option>Selecione</option>
-								<option value='IC'>Ingresso Comum</option>
-								<option value='IP'>Ingresso Premium</option>
+								<option value='null'>Selecione</option>
+								<option value='Comum'>Ingresso Comum</option>
+								<option value='Premium'>Ingresso Premium</option>
 							</select>
 						</div>
 						<div className={styles.Special__Container2}>
-							<legend>Data de Nascimento:</legend>
+							<legend>Data de Escolhida:</legend>
 							<input
-								type='date'
+								type='data'
+								name='data'
 								required
+								onChange={(event) => setData(event.target.value)}
 							/>
 						</div>
 					</div>

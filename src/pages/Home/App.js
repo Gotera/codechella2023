@@ -7,7 +7,7 @@ function Home() {
   return (
     <div>
       <FirstOne />
-      <HighLightCard />
+      {/* <HighLightCard /> */}
       <LineUp />
       <FterTypeOne />
     </div>
